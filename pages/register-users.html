@@ -9,7 +9,6 @@
 </head>
 <body onload="carregarTotalUsuarios('totalUsuario')">
   <div class="carrinho">
-    <img src="/" />
     <p>Usuários cadastrados: <span id="totalUsuario">0</span></p>
   </div>
   <section class="users-container">
@@ -39,7 +38,7 @@
           <td><input id="dataNascUsuario" type="date" /></td>
         </tr>
         <tr>
-          <td class="sexoUsuario">Sexo:</td>
+          <td class="alinharRotulos">Sexo:</td>
             <td>
               <select id="sexoUsuario">
                 <option value="1">Masculino</option>
@@ -71,7 +70,14 @@
               onclick="window.open('viewUsers.html','_self')"
             />
             <input type="reset" value="Limpar" class="alinhaBtns" />
+            <input 
+              type="button"
+              value="Menu Principal"
+              class="alinhaBtns" 
+              onclick="window.open('../index.html', '_self')"
+            />
           </td>
+      
         </tr>
       </table>
     </form>

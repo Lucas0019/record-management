@@ -9,7 +9,6 @@
 </head>
 <body onload="carregarTotalEstoque('totalEstoque')">
   <div class="carrinho">
-    <img src="/" />
     <p>Itens no estoque: <span id="totalEstoque">0</span></p>
   </div>
 
@@ -63,6 +62,12 @@
             onclick="window.open('seeStock.html','_self')"
           />
           <input type="reset" value="Limpar" class="alinhaBtns" />
+          <input 
+            type="button"
+            value="Menu Principal"
+            class="alinhaBtns" 
+            onclick="window.open('../index.html', '_self')"
+          />
         </td>
       </tr>
     </table>
