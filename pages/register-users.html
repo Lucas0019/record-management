@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Usupário</title>
+</head>
+<body onload="carregarTotalUsuarios('totalUsuario')">
+  <div class="carrinho">
+    <img src="/" />
+    <p>Usuários cadastrados: <span id="totalUsuario">0</span></p>
+  </div>
+  <section class="users-container">
+    <form>
+      <table>
+        <caption>
+          Cadastro de novos usuários
+        </caption>
+        <tr>
+          <td class="alinharRotulos">Nome completo:</td>
+          <td><input id="nomeUsuario" type="text" /></td>
+        </tr>
+        <tr>
+          <td class="alinharRotulos">Email:</td>
+          <td><input id="emailUsuario" type="email" /></td>
+        </tr>
+        <tr>
+          <td class="alinharRotulos">Telefone:</td>
+          <td><input id="telefoneUsuario" type="tel" /></td>
+        </tr>
+        <tr>
+          <td class="alinharRotulos">Endereço:</td>
+          <td><input id="enderecoUsuario" type="text" /></td>
+        </tr>
+        <tr>
+          <td class="alinharRotulos">Data de Nascimento:</td>
+          <td><input id="dataNascUsuario" type="date" /></td>
+        </tr>
+        <tr>
+          <td class="sexoUsuario">Sexo:</td>
+            <td>
+              <select id="sexoUsuario">
+                <option value="1">Masculino</option>
+                <option value="2">Feminino</option>
+                <option value="3">Outros</option>
+              </select>
+            </td>
+        </tr>
+  
+        <tr>
+          <td colspan="2" align="center">
+            <input
+              type="button"
+              value="Cadastrar"
+              class="alinhaBtns"
+              onclick="validarUsuario(
+                'nomeUsuario',
+                'emailUsuario',
+                'telefoneUsuario', 
+                'enderecoUsuario', 
+                'dataNascUsuario', 
+                'sexoUsuario',
+              )"
+            />
+            <input
+              type="button"
+              value="Ver usuários"
+              class="alinhaBtns"
+              onclick="window.open('viewUsers.html','_self')"
+            />
+            <input type="reset" value="Limpar" class="alinhaBtns" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+
+
+  <script src="../scripts/register-users.js"></script>
+</body>
+</html>
