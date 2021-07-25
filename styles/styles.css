@@ -1,14 +1,20 @@
+:root {
+  --background-forms: tomato;
+  --background-text: #212121;
+}
+
 .alinharRotulos {
   text-align: right;
 }
 .alinhaBtns {
   width:30%;
-  background-color: black;
+  background-color: var(--background-text);
   color:white;
   border:0px;
   padding:5px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 2rem;
 }
 .carrinho {
   width:300px; 
@@ -19,7 +25,7 @@
 }
 table {
   clear:both; 
-  background-color: rgb(213,97,100);
+  background: var(--background-forms);
   border-radius: 10px; 
   color:white;
   padding:10px;
@@ -27,7 +33,42 @@ table {
   margin:auto;
 }
 caption {
-  color:rgb(213,97,100); 
+  color: var(--background-forms); 
   font-weight: bold; 
   font-size: 25px;
+}
+
+.menuPrincipal {
+  display:flex;
+  justify-content: space-evenly;
+  /* margin: 50% auto; */
+}
+
+.menuPrincipal li {
+  background: tomato;
+  padding: 1rem;
+  border-radius: 1rem;
+  list-style: none;
+  transition: 1s;
+  cursor: pointer
+}
+
+.menuPrincipal li:hover  {
+  background: rgb(229, 93, 69)
+}
+
+.menuPrincipal li a  {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.iconGestao {
+  display: flex;
+  justify-content: center;
+}
+
+.iconGestao img {
+  width: 10rem
 }
